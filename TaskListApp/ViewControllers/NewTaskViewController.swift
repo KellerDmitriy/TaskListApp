@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol ButtonFactory {
     func createButton () -> UIButton
@@ -38,6 +39,8 @@ final class FilledButtonFactory: ButtonFactory {
 
 
 final class NewTaskViewController: UIViewController {
+    weak var delegate: NewTaskViewControllerDelegate!
+    private let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     lazy var taskTextField: UITextField = {
         let textField = UITextField()
@@ -103,6 +106,16 @@ final class NewTaskViewController: UIViewController {
     }
     
     private func save() {
+        let task = Task(context: viewContext)
+        task.title = taskTextField.text
+        if viewContext.hasChanges {
+            do {
+                try viewContext.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        delegate.reloadData()
         dismiss(animated: true)
     }
 }
