@@ -13,7 +13,6 @@
 		E1B213F72A19691800AA87D3 /* TaskListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1B213F52A19691800AA87D3 /* TaskListApp.xcdatamodeld */; };
 		E1B213F92A19691900AA87D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B213F82A19691900AA87D3 /* Assets.xcassets */; };
 		E1B213FC2A19691900AA87D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B213FA2A19691900AA87D3 /* LaunchScreen.storyboard */; };
-		E1B214052A1973DC00AA87D3 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B214042A1973DC00AA87D3 /* NewTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		E1B213F82A19691900AA87D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B213FB2A19691900AA87D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1B213FD2A19691900AA87D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1B214042A1973DC00AA87D3 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				E1B213F02A19691800AA87D3 /* TaskListViewController.swift */,
-				E1B214042A1973DC00AA87D3 /* NewTaskViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,7 +170,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B213F72A19691800AA87D3 /* TaskListApp.xcdatamodeld in Sources */,
-				E1B214052A1973DC00AA87D3 /* NewTaskViewController.swift in Sources */,
 				E1B213F12A19691800AA87D3 /* TaskListViewController.swift in Sources */,
 				E1B213ED2A19691800AA87D3 /* AppDelegate.swift in Sources */,
 				E1B213EF2A19691800AA87D3 /* SceneDelegate.swift in Sources */,
